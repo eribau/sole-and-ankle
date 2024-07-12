@@ -46,32 +46,27 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
+  align-items: baseline;
+  gap: 32px;
 `;
 
 const LeftColumn = styled.div`
-  flex: 1;
-  position: relative;
-  top: 16px;
+  flex-basis: 248px;
 `;
 
 const MainColumn = styled.div`
-  flex: 7;
+  flex: 1;
 `;
 
 const Header = styled.header`
   display: flex;
-  align-items: center;
-
-  & label {
-    display: flex;
-    align-items: center;
-  }
+  align-items: baseline;
+  justify-content: space-between;
 `;
 
 const Title = styled.h2`
   font-size: 1.5rem;
   font-weight: ${WEIGHTS.medium};
-  margin-right: auto;
 `;
 
 export default ShoeIndex;
